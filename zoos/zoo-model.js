@@ -28,9 +28,9 @@ function findById(id) {
     .first(); //grabs the first element of the array,;
 }
 
-function add(role) {
+function add(zoo) {
   return db('zoos')
-    .insert(role)
+    .insert(zoo)
     .then(ids => {
       const [id] = ids;
 
