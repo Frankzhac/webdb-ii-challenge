@@ -9,6 +9,12 @@ server.use(helmet());
 // endpoints here
 
 const port = 3300;
+
+server.get('/', (req, res) => {
+  res.send('Hello Word');
+});
+
+
 server.listen(port, function() {
   console.log(`\n=== Web API Listening on http://localhost:${port} ===\n`);
 });
